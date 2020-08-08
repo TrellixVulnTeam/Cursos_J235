@@ -6,6 +6,7 @@ VALUES = [1 ,2 ,3 , 4, 5, 6, 7, 8, 9, 10, 11, 12,13]
 
 def create_deck():
     deck = []
+
     for suit in SUITS:
         for value in VALUES:
             deck.append((suit, value))
@@ -44,17 +45,17 @@ def main(size_hand, tries):
         for val in counter.keys():
             aux.append(val)
             aux.sort()
-        #print(aux)
 
         ladder = 0
+
         if len(aux) == size_hand:
-            #print(aux)
             i=0
+
             while i < len(aux) - 1:
                  if aux[i] + 1 == aux[i + 1]:
                      ladder += 1
                  i += 1
-                #print('Ladders counter is:',ladder,'\n\n')
+
                  if ladder == size_hand - 1:
                      match += 1
 
