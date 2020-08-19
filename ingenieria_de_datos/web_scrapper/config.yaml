@@ -1,0 +1,9 @@
+news_sites:
+    clarin:
+        url: https://www.clarin.com/
+        queries:
+            homepage_article_links: '.mt h2'
+    el_pais:
+        url: https://elpais.com/america/
+        queries:
+            homepage_article_links: ''
